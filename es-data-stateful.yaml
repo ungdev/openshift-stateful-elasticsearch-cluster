@@ -63,9 +63,9 @@ spec:
   - metadata:
       name: storage
       annotations:
-        volume.beta.kubernetes.io/storage-class: ssd
+        volume.beta.kubernetes.io/storage-class: dynamic
     spec:
       accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:
-          storage: 20Gi
+          storage: 500Gi
